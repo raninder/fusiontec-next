@@ -1,0 +1,68 @@
+.about-main2{
+    padding: 5rem 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0.4rem;
+    padding: 2rem 0rem;
+}
+
+.vision-head{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000;
+}
+
+.vision-head-ext{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3BAD67;
+}
+
+.vision-text{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:1200px){
+    .about-main2{
+        padding: 5rem 10rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    .about-main2{
+        padding: 5rem 5rem;
+    }
+}
+
+@media screen and (max-width:550px){
+    .about-main2{
+        padding: 5rem 2rem;
+    }
+    .vision-text{
+        width: 80%;
+    }
+}

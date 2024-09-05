@@ -1,0 +1,141 @@
+.navbarMain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+.navLogoCont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logoImg{
+    height: 3rem;
+}
+
+.navLogoCont span{
+    color: #fff;
+    font-size: 0.6rem;
+    font-style: italic;
+    margin-left: 3.5rem;
+    margin-top: -0.6rem;
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dropDownContent {
+    border-radius: 7px;
+    top: 10%;
+    left: 69%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white; /* Set background color to white */
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 15;
+    text-decoration: none;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 10; /* Make sure the overlay is behind the dropdown */
+  }
+  .dropDownContentLinks:hover {
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #3bad67;
+    cursor: pointer;
+    color: #fff;
+    
+  }
+  .dropDownContentLinks{
+    padding: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+  }
+
+.navLinksSpan{
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navContactBtn{
+    background: linear-gradient(to left, #3bad67 50%, #d4214c 50%) right;
+    background-size: 200% 100%;
+    cursor: pointer;
+    transition: .5s ease-out;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 2rem;
+}
+
+.navContactBtn:hover {
+    background-position: left;
+}
+
+
+.navContactBtn span{
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.menuBar{
+    display: none;
+}
+
+@media screen and (max-width:650px){
+    .menuBar{
+        display: block;
+    }
+    .navContactBtn{
+       display: none;
+    }
+    .navLinks span{
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px){
+    .logoImg{
+        height: 2.3rem;
+    }
+    .menuBar{
+        display: block;
+        height: 2rem;
+    }
+    .navLogoCont span{
+        color: #fff;
+        font-size: 0.4rem;
+        font-style: italic;
+        margin-left: 2.8rem;
+        margin-top: -0.3rem;
+    }
+}

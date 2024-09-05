@@ -1,0 +1,112 @@
+.landingMain1{
+    background-image: url('../../../public/assets/backgrounds/LandingComp1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.landingMain1Cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.landingMain1Tag{
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 5rem;
+    width: 80%;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.landingMain1Bio{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    width: 60%;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.landingMain1Button{
+    background-color: #B20723;
+    border-radius: 1rem;
+    padding: 0.3rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.landingMain1Button span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.landingMain1Arrow{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+
+@media screen and (max-width:550px){
+    .landingMain1Tag{
+        color: #fff;
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .landingMain1Bio{
+        font-family: "Avenir Next",sans-serif;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-top: 5rem;
+        width: 80%;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+}
+
+@media screen and (max-width:430px){
+    .landingMain1Cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 4rem 0rem 3rem 0rem;
+    }
+    .landingMain1Tag{
+        color: #fff;
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 3.2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .landingMain1Bio{
+        font-family: "Avenir Next",sans-serif;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        width: 80%;
+        text-align: center;
+        line-height: 2rem;
+    }
+}

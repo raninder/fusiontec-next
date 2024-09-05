@@ -1,0 +1,163 @@
+.about-main3{
+    padding: 0rem 15rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../assets/backgrounds/TeczBg.png'), url('../../../assets/backgrounds/FusionBg.png');
+    background-repeat: no-repeat;
+    background-position: right 80%, left 40%;
+}
+
+.about-main3-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0.4rem;
+    padding: 2rem 0rem;
+}
+
+.about-main3-head{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000;
+}
+
+.about-main3-head-ext{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3BAD67;
+}
+
+.about-main3-founders{
+    margin-top: 4rem;
+}
+
+.about-main3-founder-left{
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ justify-content: flex-start;   
+}
+
+.about-main3-founder-right{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;  
+    margin-top: 8rem; 
+}
+
+.founder-left-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.founder-right-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.founder-name{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 35px;
+    letter-spacing: 0px;
+    color: #3BAD67;
+}
+
+.founder-position{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+
+.founder-bio{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0px;
+    width: 60%;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width:1200px){
+    .founder-bio{
+        font-family: 'Avenir', sans-serif;
+        font-size: 1rem;
+        font-weight: 900;
+        line-height: 25px;
+        letter-spacing: 0px;
+        width: 80%;
+        margin-top: 1rem;
+    }
+    .about-main3-founder-left{
+        width: 100%;
+    }
+    .founders{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .about-main3{
+        padding: 0rem 8rem;
+        background-size: 60%, 80%;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .about-main3{
+        padding: 0rem 5rem;
+        background-size: 60%, 80%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .about-main3{
+        padding: 0rem 3rem;
+        background-size: 60%, 80%;
+    }
+}
+
+
+@media screen and (max-width:450px){
+    .about-main3{
+        padding: 0rem 2rem;
+        background-size: 60%, 80%;
+    }
+    .founder-bio{
+        font-family: 'Avenir', sans-serif;
+        font-size: 1rem;
+        font-weight: 900;
+        line-height: 25px;
+        letter-spacing: 0px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

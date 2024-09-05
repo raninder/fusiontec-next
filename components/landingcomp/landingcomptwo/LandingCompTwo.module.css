@@ -1,0 +1,64 @@
+.landingMain2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0rem;
+  background-color: #fff;
+}
+
+.landingMain2Head{
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: black;
+}
+
+.landingMain2Tag{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    width: 50%;
+}
+
+.landingMain2TagExt{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color:#3BAD67;
+}
+
+.landingMain2Bio{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    width: 50%;
+    color: black;
+}
+
+@media screen and (max-width:1200px){
+    .landingMain2Tag{
+        font-size: 3rem;
+         width: 60%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .landingMain2Head{
+        width: 70%;
+    }
+    .landingMain2Tag{
+        font-size: 2.5rem;
+        width: 80%;
+    }
+    .landingMain2TagExt{
+        font-size: 2.5rem;
+    }
+    .landingMain2Bio{
+        width: 80%;
+    }
+}
