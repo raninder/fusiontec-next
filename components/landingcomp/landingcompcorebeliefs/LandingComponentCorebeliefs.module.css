@@ -15,7 +15,7 @@
     align-items: stretch;
     justify-content: center;
     align-self: center;
-}
+   }
 
 .landingCore7Left{
     display: flex;
@@ -24,42 +24,46 @@
     justify-content: flex-start;
     background-color: #b80729;
     padding: 2rem;
-    width: 60vw;
+    width: 50vw;
+    /* width: 40%; */
 }
 
 .landingCore7RightWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+   
+    
 }
 
 .landingCore7Right{
     display: grid;
     /* grid-template-columns: repeat(2, 1fr);  */
     grid-template-columns: auto auto;
-    grid-gap: 4rem; /* Gap between grid items */
-    align-self: center;
+    grid-gap: 5rem; /* Gap between grid items */
+    padding:5rem;
 }
 
 .landingCore7LeftHead{
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 900;
+    line-height:3.4rem;
     width: 90%;
 }
 
 .landingCore7LeftTag{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
+    line-height:2.5rem;
     width: 100%;
     margin-top: 2rem;
 }
 
 .landingCore7LeftPara{
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     width: 100%;
     margin-top: 2rem;
@@ -67,8 +71,9 @@
 
 .landingCore7LeftBottomTag{
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
+    line-height:2.5rem;
     width: 100%;
     border-left: 5px solid white;
     margin-top: 4rem;
@@ -83,20 +88,22 @@
 }
 
 .core7RightChildImg{
-   height: 4rem;
-   width: 4rem;
+   height: 5rem;
+   width: 5rem;
+   border:2px solid green;
 }
 
 .core7RightChildHead{
     margin-top: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #b80729;
     font-weight: 700;
  }
 
  .core7RightChildContent{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    line-height: 2rem;
     color: #000;
  }
 

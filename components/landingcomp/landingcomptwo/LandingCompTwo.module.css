@@ -18,22 +18,22 @@
 .landingMain2Tag{
     font-family: "Playfair Display", serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.7rem;
     text-align: center;
     color: black;
-    width: 50%;
+    width: 40%;
 }
 
 .landingMain2TagExt{
     font-family: "Playfair Display", serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.7rem;
     color:#3BAD67;
 }
 
 .landingMain2Bio{
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     text-align: center;
     width: 50%;

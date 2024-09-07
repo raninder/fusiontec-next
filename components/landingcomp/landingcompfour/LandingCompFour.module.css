@@ -1,0 +1,164 @@
+.landingMain4{
+    background-color:#EDEDED;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height:100vh;
+}
+
+.landingMain4First{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: center;
+
+    /* height: 100%; */
+    padding:0rem 3rem;
+}
+
+.landingMain4FirstImg{
+    margin-right: 2rem;
+    align-self: flex-start;
+    margin-top: 0rem;
+    height:80vh;
+}
+
+.landingMain4SecondImg{
+    margin-bottom: 0rem;
+    height:80vh;
+}
+
+.landingMain4Second{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    height:80vh;
+    padding: 2rem 0rem;
+}
+
+.landingMain4SecondTag{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #121212;
+}
+
+
+.landingMain4SecondHead{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #121212;
+    margin-top: 1.5rem;
+}
+
+.landingMain4SecondBio{
+    /* font-family: 'Avenir Next',sans-serif; */
+    font-family: 'Avenir Next', 'sans-serif';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color:#121212;
+    line-height: 1.8rem;
+    margin: 2rem 0rem;
+}
+
+
+.landingMain4Button{
+    position: relative;
+    background-color: #000;
+    border-radius: 1.5rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    padding:1.6rem;
+}
+
+.landingMain4Button span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.landingMain4Button:before{
+    content: '';
+    position: absolute;
+    height: 120px;
+    width: 8px;
+    background: #ffff;
+    box-shadow: 0px 0px 10px #fff;
+    margin-right: 80px;
+    filter: blur(1px);
+    opacity: 0.9;
+    /* top: -30px; */
+    /* left: 100px; */
+    transition: 0.7s;
+    transform: rotate(-20deg) translateX(-60px);
+
+}
+
+.landingMain4Button:hover:before{
+    transform: rotate(-20deg) translate(140px , 70px);
+}
+
+.landingMain4SecondImgWrap{
+    display: none;
+}
+
+@media screen and (max-width:950px){
+
+    .landingMain4{
+        padding: 3rem 0rem;
+    }
+
+    .landingMain4FirstImg{
+        margin-right: 2rem;
+        align-self: flex-start;
+        margin-top:0rem;
+        height: 20rem;
+    }
+
+    .landingMain4SecondImg{
+        margin-bottom: -2rem;
+        height: 20rem;
+    }
+
+    .landingMain4First{
+        display: none;
+    }
+
+    .landingMain4Second{
+        width: 100%;
+        padding: 0rem 4rem;
+    }
+
+    .landingMain4SecondImgWrap{
+       display: block;
+       margin: 2rem 0rem;
+    }   
+ 
+}
+
+@media screen and (max-width:650px){
+    .landingMain4Second{
+        width: 100%;
+        padding: 0rem 2rem;
+    }
+    .landingMain4FirstImg{
+        align-self: flex-start;
+        margin-top:0rem;
+        height: 15rem;
+    }
+
+    .landingMain4SecondImg{
+        margin-bottom: -2rem;
+        height: 15rem;
+    }
+}

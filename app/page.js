@@ -3,6 +3,7 @@ import React from 'react';
 import LandingCompOne from "@/components/landingcomp/landingcompone/LandingCompOne";
 import LandingCompTwo from "@/components/landingcomp/landingcomptwo/LandingCompTwo";
 import LandingCompThree from "@/components/landingcomp/landingcompthree/LandingCompThree";
+import LandingCompFour from "@/components/landingcomp/landingcompfour/LandingCompFour";
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
        <LandingCompOne/>
        <LandingCompTwo/>
        <LandingCompThree/>
+       <LandingCompFour/>
     </div>
   );
 };
