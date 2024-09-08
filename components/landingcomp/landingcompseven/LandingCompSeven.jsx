@@ -1,7 +1,8 @@
 import React from 'react';
-import "./LandingCompSeven.css";
+import styles from "./LandingCompSeven.module.css"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
+
 
 export default function LandingCompSeven() {
   return (
@@ -10,13 +11,13 @@ export default function LandingCompSeven() {
     duration={1.5} 
     initiallyVisible={false}
     animateIn="animate__fadeInUp">
-    <div className='landing-main7'>
-        <div className='landing-main7-comp'>
-          <span className='landing-main7-comp-tag'>Start a New Chapter of Success with Fusiontecz</span>
-          <span className='landing-main7-comp-head'>Take Your Business to New Heights</span>
-          <span className='landing-main7-comp-bio'>Experience the transformative impact of our services. Reach out for a bespoke consultation and step into a future of unparalleled business achievements.</span>
-          <div className='landing-main7-button'>
-          <Link to="contact-comp" 
+    <div className={styles.landingMain7}>
+        <div className={styles.landingMain7Comp}>
+          <span className={styles.landingMain7CompTag}>Start a New Chapter of Success with Fusiontecz</span>
+          <span className={styles.landingMain7CompHead}>Take Your Business to New Heights</span>
+          <span className={styles.landingMain7CompBio}>Experience the transformative impact of our services. Reach out for a bespoke consultation and step into a future of unparalleled business achievements.</span>
+          <div className={styles.landingMain7Button}>
+          <Link href="contact-comp" 
             spy={true} 
             smooth={true} 
             offset={50} 

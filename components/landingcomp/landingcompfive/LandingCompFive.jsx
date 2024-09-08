@@ -1,18 +1,21 @@
+'use client'
+
 import React, { useEffect, useState } from 'react';
-import './LandingCompFive.css';
-import Service1 from "../../../assets/images/service1editted.png"
-import Service2 from "../../../assets/images/services2Editted.png"
-import Service3 from "../../../assets/images/services3Editted.png"
-import Service4 from "../../../assets/images/servicec4Editter.png"
-import Service21 from "../../../assets/images/service111.png"
-import Service22 from "../../../assets/images/service222.png"
-import Service23 from "../../../assets/images/service333.png"
-import Service24 from "../../../assets/images/service444.png"
+import styles from './LandingCompFive.module.css';
+import Service1 from "../../../public/assets/images/service1editted.png"
+import Service2 from "../../../public/assets/images/services2Editted.png"
+import Service3 from "../../../public/assets/images/services3Editted.png"
+import Service4 from "../../../public/assets/images/servicec4Editter.png"
+import Service21 from "../../../public/assets/images/service111.png"
+import Service22 from "../../../public/assets/images/service222.png"
+import Service23 from "../../../public/assets/images/service333.png"
+import Service24 from "../../../public/assets/images/service444.png"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { Link, useNavigate } from 'react-router-dom';
+import Link from 'next/link';
+// import { Link, useNavigate } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function LandingCompFive() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [image1, setImage1] = useState(Service1);
     const [image2, setImage2] = useState(Service2);
     const [image3, setImage3] = useState(Service3);
@@ -81,24 +84,24 @@ export default function LandingCompFive() {
     duration={1.5} 
     initiallyVisible={false}
     animateIn="animate__fadeInUp">
-    <div className='landing-main5'>
-    <span  className='landing-main5-head'>Our Services</span>
-    <span className='landing-main5-tag'>Fusiontecz: Pioneering Comprehensive Business Solutions for the Digital Age</span>
-    <div className='landing-main5-services-cont'>
+    <div className={styles.landingMain5}>
+    <span  className={styles.landingMain5Head}>Our Services</span>
+    <span className={styles.landingMain5Tag}>Fusiontecz: Pioneering Comprehensive Business Solutions for the Digital Age</span>
+    <div className={styles.landingMain5ServicesCont}>
        {
         services.map((data, index)=>(
             <AnimationOnScroll 
             key={index} 
-            className={index%2 === 0 ? 'landing-main5-service-left' : 'landing-main5-service-right'} 
+            className={index%2 === 0 ? styles.landingMain5ServiceLeft : styles.landingMain5ServiceRight} 
             animateIn={index%2 === 0 ?"animate__fadeInLeft":"animate__fadeInRight"} 
             duration={1.5}>
-               <LazyLoadImage cov src={data.picture} className='landing-service-img'/>
-               <div className='landing-service-data-cont'>
-                  <span className={index%2 === 0 ?  'landing-main5-service-left-tag' : 'landing-main5-service-right-tag'}>{data.tag}</span>
-                  <span className={index%2 === 0 ?  'landing-main5-service-left-head' : 'landing-main5-service-right-head'}>{data.head}</span>
-                  <span className={index%2 === 0 ?  'landing-main5-service-left-bio' : 'landing-main5-service-right-bio'}>{data.bio}</span>
-                  <div className={index%2 === 0 ? 'landing-main5-service-left-button': 'landing-main5-service-right-button'}>
-                    <Link className={index%2 === 0 ? 'landing-main5-service-left-button-text': 'landing-main5-service-right-button-text'} to={`/${data.route}`}>{data.buttonText}</Link>
+               <LazyLoadImage cov src={data.picture.src} className={styles.landingServiceImg}/>
+               <div className={styles.landingServiceDataCont}>
+                  <span className={index%2 === 0 ?  styles.landingMain5ServiceLeftTag : styles.landingMain5ServiceRightTag}>{data.tag}</span>
+                  <span className={index%2 === 0 ?  styles.landingMain5ServiceLeftHead : styles.landingMain5ServiceRightHead}>{data.head}</span>
+                  <span className={index%2 === 0 ?  styles.landingMain5ServiceLeftBio : styles.landingMain5ServiceRightBio}>{data.bio}</span>
+                  <div className={index%2 === 0 ? styles.landingMain5ServiceLeftButton: styles.landingMain5ServiceRightButton}>
+                    <Link className={index%2 === 0 ? styles.landingMain5ServiceLeftButtonText: styles.landingMain5ServiceRightButtonText} href={`/${data.route}`}>{data.buttonText}</Link>
                   </div>
                </div>
             </AnimationOnScroll>

@@ -13,6 +13,7 @@
     "next": "14.2.7",
     "react": "^18",
     "react-animation-on-scroll": "^5.1.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-lazy-load-image-component": "^1.6.2",
     "react-responsive-carousel": "^3.2.23",

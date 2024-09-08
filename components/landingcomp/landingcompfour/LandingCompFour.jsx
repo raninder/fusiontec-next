@@ -6,16 +6,13 @@ import SecondImg from "../../../public/assets/images/About-us.png";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Link from 'next/link';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 export default function LandingCompFour() {
 
   return (
     <motion.div
-    // initial="hide"
-    // whileInView="show"
-    // exit="hide"
     initial={{ x: 500, opacity: 0 }}
     animate={{ x: 0, opacity: 1 }}
     transition={{ ease: "easeInOut", duration: 5 }}
