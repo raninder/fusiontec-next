@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../../../assets/backgrounds/TeczBg.png'), url('../../../assets/backgrounds/FusionBg.png');
+    background-image: url('../../../public/assets/backgrounds/TeczBg.png'), url('../../../public/assets/backgrounds/FusionBg.png');
     background-repeat: no-repeat;
     background-position: right 80%, left 40%;
 }

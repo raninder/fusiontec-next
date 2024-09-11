@@ -49,11 +49,7 @@ export default function LandingCompSix() {
     }
   ];
   return (
-    <AnimationOnScroll 
-    animatePreScroll={false}
-    duration={1.5} 
-    initiallyVisible={false}
-    animateIn="animate__fadeInUp">
+    <div data-aos='fade-up' data-aos-delay="800">
     <div className={styles.landingMain6}>
        {
         arr.map((data, index)=>(
@@ -66,6 +62,6 @@ export default function LandingCompSix() {
         ))
        }
     </div>
-    </AnimationOnScroll>
+    </div>
   )
 }

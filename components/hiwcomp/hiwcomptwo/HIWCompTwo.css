@@ -1,0 +1,193 @@
+.hiw-main2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0rem;
+    background-image: url('../../../public/assets/backgrounds/TeczBg.png'), url('../../../public/assets/backgrounds/FusionBg.png');
+    background-repeat: no-repeat;
+    background-position: right 35%, left 25%;
+}
+
+.hiw-service-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.hiw-service-right-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.services-arrow-right{
+    align-self: flex-end;
+}
+
+.hiw-service-right-detials{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 3rem;
+    text-align: right;
+}
+
+.hiw-service-right-images{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.hiw-service-left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.hiw-service-left-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.services-arrow-left{
+    align-self: flex-start;
+}
+
+.hiw-service-left-detials{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 3rem;
+    text-align: left;
+}
+
+.hiw-service-left-images{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.hiw-service-number{
+    font-family: 'Avenir Next Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color:#909294;
+}
+
+.hiw-service-name{
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    color:#3BAD67
+}
+
+.hiw-service-tag{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 35px;
+    letter-spacing: 0px;
+    margin-top: 1.5rem;
+    color: #111111;
+}
+
+.hiw-service-message{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0px;
+    color: #111111;
+    width: 80%;
+}
+
+.service-img2{
+   margin-left: 1rem;
+   margin-bottom: -3rem;
+}
+
+.services-arrow-right{
+    margin: 4rem 0rem;
+}
+
+.services-arrow-left{
+    margin: 4rem 0rem;
+}
+
+@media screen and (max-width:1200px){
+    .hiw-service-left{
+        width: 80%;
+    }
+    .hiw-service-right{
+        width: 80%;
+    }
+    .hiw-service-message{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .hiw-service-left{
+        width: 90%;
+    }
+    .hiw-service-right{
+        width: 90%;
+    }
+    .hiw-service-message{
+        width: 100%;
+    }
+    .service-img2{
+        margin-left: 1rem;
+        margin-bottom: -3rem;
+        display: none;
+     }
+}
+
+@media screen and (max-width:500px){
+    .hiw-service-number{
+       margin-top: 2rem;
+    }
+    .hiw-service-right-wrap{
+        flex-direction: column-reverse;
+    }
+    .hiw-service-left-wrap{
+        flex-direction: column;
+    }
+    .services-arrow-left{
+        align-self: center;
+    }
+    .services-arrow-right{
+        align-self: center;
+    }
+    .hiw-main2{
+        padding: 6rem 0rem;
+    }
+    .hiw-service-name{
+        font-size: 1.8rem;
+    }
+    .hiw-service-tag{
+        margin-top: 0.8rem;
+    }
+    
+    .hiw-service-message{
+        font-size: 1rem;
+        width: 90%;
+        line-height: 25px;
+    }
+}

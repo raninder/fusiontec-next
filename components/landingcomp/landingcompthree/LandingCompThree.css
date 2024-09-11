@@ -1,4 +1,4 @@
-.landing-main3{
+.landingMain3{
     margin-top: 2rem;
    padding: 2rem 3rem;
    background-image: url('../../../public/assets/backgrounds/LandingThirdBg1.png');
@@ -12,18 +12,18 @@
     background-size: 20%;
 }
 
-.landing-main3-first{
+.landingMain3First{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
 }
 
-.landing-main3-first-options-cont{
+.landingMain3FirstOptionsCont{
     padding-right: 4rem;
 }
 
-.main3-first-options-wrap{
+.main3FirstOptionsWrap{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,7 +31,7 @@
     margin-bottom: 1rem;
 }
 
-.main3-first-options-span{
+.main3FirstOptionsSpan{
     margin-left: 0.7rem;
     font-family: "Playfair Display", serif;
     font-weight: 400;
@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 
-.main3-first-options-span-active{
+.main3FirstOptionsSpanActive{
     margin-left: 0.7rem;
     color: #B20723;
     font-family: "Playfair Display", serif;
@@ -47,7 +47,7 @@
     cursor: pointer;
 }
 
-.landing-main3-data-cont{
+.landingMain3DataCont{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -58,14 +58,14 @@
     width: 50%;
 }
 
-.main3-data-cont-header{
+.main3DataContHeader{
     font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 1.5rem;
     color: #000;
 }
 
-.main3-data-cont-bio{
+.main3DataContBio{
     font-weight: 400;
     font-size: 1.1rem;
     color:#6E6E6E;
@@ -75,11 +75,11 @@
     margin-top: 0.5rem;
 }
 
-.main3-data-cont-img{
+.main3DataContImg{
     height: 40%;
 }
 
-.landing-main3-second{
+.landingMain3Second{
     height: 60vh;
     width: 65vw;
     background: url('../../../public/assets/backgrounds/LandingThirdCompBG.png');
@@ -88,46 +88,46 @@
     margin-top: 4rem;
 }
 
-.landing-main3-carousel{
+.landingMain3Carousel{
     display: none;
 }
 
 @media screen and (max-width:1400px){
-    .landing-main3-data-cont{
+    .landingMain3DataCont{
         width: 70%;
     }
-    .main3-data-cont-img{
+    .main3DataContImg{
         height: 25vh;
     }
 }
 
 @media screen and (max-width:1200px){
-    .main3-data-cont-img{
+    .main3DataContImg{
         height: 20vh;
     }
-    .landing-main3-data-cont{
+    .landingMain3DataCont{
         width: 70%;
     }
-    .landing-main3-second{
+    .landingMain3Second{
         width: 85vw;
         height: 40vh;
     }
 }
 
 @media screen and (max-width:650px){
-    .landing-main3{
+    .landingMain3{
         margin-top: 0rem;
        padding: 2rem 0rem;
        background-image: url('../../../public/assets/backgrounds/LandingThirdBg1.png');
        background-position: center left;
        background-size: 50%;
     }
-    .landing-main3-carousel{
+    .landingMain3Carousel{
         display: block;
         width: 100vw;
     }
 
-    .landing-main3-carousel-data-cont{
+    .landingMain3CarouselDataCont{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,15 +137,15 @@
 
     }
 
-    .landing-main3-data-cont{
+    .landingMain3DataCont{
         display: none;
     }
 
-    .landing-main3-first-options-cont{
+    .landingMain3FirstOptionsCont{
         display: none;
     }
 
-    .main3-data-cont-bio{
+    .main3-dataContBio{
         line-height: 1.5rem;
     }
 }

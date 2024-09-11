@@ -12,16 +12,7 @@ import { motion } from 'framer-motion';
 export default function LandingCompFour() {
 
   return (
-    <motion.div
-    initial={{ x: 500, opacity: 0 }}
-    animate={{ x: 0, opacity: 1 }}
-    transition={{ ease: "easeInOut", duration: 5 }}
-  >
-    {/* <AnimationOnScroll 
-    animatePreScroll={false}
-    duration={1.5} 
-    initiallyVisible={false}
-    animateIn="animate__fadeInUp"> */}
+    <div data-aos='fade-up' data-aos-delay="800">
     <div className={styles.landingMain4}>
         <div className={styles.landingMain4First}>
           <LazyLoadImage src={FirstImg.src} className={styles.landingMain4FirstImg}/>
@@ -40,7 +31,6 @@ export default function LandingCompFour() {
             </Link>
         </div>
     </div>
-    {/* </AnimationOnScroll> */}
-    </motion.div>
+    </div>
   )
 }

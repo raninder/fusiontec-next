@@ -1,0 +1,286 @@
+.contact-comp{
+    background-repeat: no-repeat;
+    background-position: left 130%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    padding-bottom: 6rem;
+    background-size: 20%;
+}
+
+.contact-wrapper {
+    /* background-image: url('../../assets/backgrounds/registerBg.png'); */
+    /* background-color: #3bad67; */
+    background-size: cover; /* Stretch the background image to cover the entire container */
+    width: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    /* padding-bottom: -10px; */
+}
+.contact-img-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img-left{
+    border-radius: 20px;
+    width: 35rem;
+    height: 100%;
+    margin-bottom: 0rem;
+}
+
+.contact-img-right{
+    height: 35rem;
+    margin-left: 2rem;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #F4F4F4; */
+    width: 45%;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.contact-form-head{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 1rem 0rem;
+}
+
+.form-input-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.input-cont{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.input-cont span{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0.4rem;
+    color: #d4214c;
+}
+
+.name-number-input{
+    padding: 0.6rem 0.8rem;
+    border: none;
+    width: 90%;
+    font-size: 0.9rem;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#C5C5C5;
+    border-bottom: 1px solid black;
+
+}
+
+.name-number-input:focus{
+    outline: none;
+}
+
+.contact-input-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.contact-input-wrap span{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0.4rem;
+    color: #d4214c;
+}
+
+.services-option-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.services-option-cont{
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.services-option-cont span{
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:black;
+}
+
+.contact-comment-span{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0.4rem;
+    color: #d4214c;
+}
+
+.conact-comment-input{
+    width: 95%;
+    font-size: 0.9rem;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#C5C5C5;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.conact-comment-input:focus{
+    outline: none;
+}
+
+.contact-submit-button{
+   align-self: center;
+   background: linear-gradient(to left,#d4214c 50%, #3bad67 50%) right;
+   background-size: 200% 100%;
+   transition: .5s ease-out;
+   border-radius: 2rem;
+   padding: 0.3rem 1rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin: 2rem 0rem;
+   cursor: pointer;
+   align-self: center;
+}
+
+.contact-submit-button:hover {
+    background-position: left;
+}
+
+
+.contact-submit-button span{
+    color: #F1F1F1;
+    font-family: 'Avenir Next',sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.email-input{
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 94%;
+    font-size: 0.7rem;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#C5C5C5
+}
+
+.email-input:focus{
+    outline: none;
+}
+
+
+@media screen and (max-width:1400px){
+    .contact-img-left{
+        height: 100%;
+        width: 30vw;
+    }
+    
+    .contact-form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1100px){
+  
+    .contact-wrapper{
+        width: 70%;
+    }
+    .contact-img-cont{
+        display: none;
+    }
+    .contact-form{
+       width: 100%;
+    }
+    .email-input{
+        width: 96%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .contact-wrapper{
+        width: 80%;
+        padding: 1rem;
+    }
+    .form-input-wrap{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: -1rem;
+    }
+    .input-cont{
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+    .email-input{
+        width: 92%;
+    }
+    .contact-form-head{
+        font-size: 2.5rem;
+    }
+}

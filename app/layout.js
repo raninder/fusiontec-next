@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import AOSProvider from "@/components/AOSProvider";
+import Footer from "@/components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -23,7 +25,10 @@ export default function RootLayout({ children }) {
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16605708602"></script>
       </head>
       <body className={inter.className}>
+        <AOSProvider>
         {children}
+        </AOSProvider>
+        <Footer/>
         <script
           dangerouslySetInnerHTML={{
             __html: `

@@ -12,10 +12,9 @@ import Service23 from "../../../public/assets/images/service333.png"
 import Service24 from "../../../public/assets/images/service444.png"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Link from 'next/link';
-// import { Link, useNavigate } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 export default function LandingCompFive() {
-    // const navigate = useNavigate();
     const [image1, setImage1] = useState(Service1);
     const [image2, setImage2] = useState(Service2);
     const [image3, setImage3] = useState(Service3);
@@ -79,23 +78,17 @@ export default function LandingCompFive() {
         },
     ];
   return (
-    <AnimationOnScroll 
-    animatePreScroll={false}
-    duration={1.5} 
-    initiallyVisible={false}
-    animateIn="animate__fadeInUp">
+    <div data-aos='fade-up' data-aos-delay="800">
     <div className={styles.landingMain5}>
     <span  className={styles.landingMain5Head}>Our Services</span>
     <span className={styles.landingMain5Tag}>Fusiontecz: Pioneering Comprehensive Business Solutions for the Digital Age</span>
     <div className={styles.landingMain5ServicesCont}>
        {
         services.map((data, index)=>(
-            <AnimationOnScroll 
-            key={index} 
+            <div data-aos-delay="800" key={index}
             className={index%2 === 0 ? styles.landingMain5ServiceLeft : styles.landingMain5ServiceRight} 
-            animateIn={index%2 === 0 ?"animate__fadeInLeft":"animate__fadeInRight"} 
-            duration={1.5}>
-               <LazyLoadImage cov src={data.picture.src} className={styles.landingServiceImg}/>
+            data-aos={index%2 === 0 ?"fade-left":"fade-right"} >
+            <LazyLoadImage cov src={data.picture.src} className={styles.landingServiceImg}/>
                <div className={styles.landingServiceDataCont}>
                   <span className={index%2 === 0 ?  styles.landingMain5ServiceLeftTag : styles.landingMain5ServiceRightTag}>{data.tag}</span>
                   <span className={index%2 === 0 ?  styles.landingMain5ServiceLeftHead : styles.landingMain5ServiceRightHead}>{data.head}</span>
@@ -104,11 +97,11 @@ export default function LandingCompFive() {
                     <Link className={index%2 === 0 ? styles.landingMain5ServiceLeftButtonText: styles.landingMain5ServiceRightButtonText} href={`/${data.route}`}>{data.buttonText}</Link>
                   </div>
                </div>
-            </AnimationOnScroll>
-        ))
+               </div>
+              ))
        }
     </div>
     </div>
-    </AnimationOnScroll>
+    </div>
   )
 }

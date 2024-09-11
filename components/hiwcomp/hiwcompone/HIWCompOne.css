@@ -1,0 +1,87 @@
+.hiw-main1{
+    background-image: url('../../../public/assets/backgrounds/HIWComp1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.hiw-main1-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 7rem 0rem;
+}
+
+.hiw-main1-tag{
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 5rem;
+    width: 80%;
+    text-align: center;
+}
+
+.hiw-main1-bio{
+    font-family: "Avenir Next",sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    width: 60%;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+@media screen and (max-width:550px){
+    .about-main1-tag{
+        color: #fff;
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about-main1-bio{
+        font-family: "Avenir Next",sans-serif;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-top: 5rem;
+        width: 80%;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+}
+
+@media screen and (max-width:430px){
+    .hiw-main1-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 4rem 0rem 6rem 0rem;
+    }
+    .hiw-main1-tag{
+        color: #fff;
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 3.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hiw-main1-bio{
+        font-family: "Avenir Next",sans-serif;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        width: 80%;
+        text-align: center;
+        line-height: 2rem;
+    }
+}

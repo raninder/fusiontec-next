@@ -1,0 +1,165 @@
+.reviewComp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0rem;
+    background-color: #fff;
+  }
+  
+  .reviewCompHead{
+      font-weight: 700;
+      font-size: 1.7rem;
+      line-height: 2rem;
+  }
+  
+  .reviewCompTag{
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 3.6rem;
+      width: 40%;
+      text-align: center;
+  }
+  
+  .reviewCompTagExt{
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 3rem;
+      color:#3BAD67;
+  }
+  
+  .reviewCompBio{
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+      width: 50%;
+     
+  }
+
+  .reviewsCont{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 70%;
+    align-self: center;
+    margin-top: 2rem;
+  }
+
+  .reviewWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color:#EDEDED;
+    border-radius: 0.6rem;
+    width: 22%;
+    padding: 1rem;
+  }
+
+  .reviewUserWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reviewUserDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0.5rem;
+  }
+
+  .starContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0rem;
+  }
+
+  .starContainer img{
+    margin-right: 0.6rem;
+  }
+
+  .reviewText{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+
+  .reviewUserName{
+    font-family:' Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .reviewDate{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  @media screen and (max-width:1200px){
+    .reviewCompTag{
+      width: 50%;
+  }
+  .reviewsCont{
+    width: 90%;
+  }
+  }
+
+  @media screen and (max-width:900px){
+    .reviewCompTag{
+      width: 60%;
+  }
+  .reviewWrapper{
+    width: 90%;
+  }
+  .reviewsCont{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr);  */
+    grid-template-columns: auto auto;
+    grid-gap: 1rem; /* Gap between grid items */
+    width: 93%;
+  }
+  .stars{
+    height: 1.6rem;
+  }
+    
+  .reviewCompBio{
+    margin-top: 2rem;
+    font-weight: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+}
+  }
+
+  @media screen and (max-width:650px){
+    .reviewWrapper{
+      width: 70%;
+    }
+    .reviewCompTag{
+      width: 100%;
+  }
+  .reviewsCont{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 1rem; /* Gap between grid items */
+    width: 93%;
+    justify-items: center;
+    align-items: center;
+  }
+  }

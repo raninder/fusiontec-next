@@ -1,8 +1,16 @@
+'use client'
+import AboutCompOne from "@/components/aboutuscomp/aboutcompone/AboutCompOne";
+import AboutCompThree from "@/components/aboutuscomp/aboutcompthree/AboutCompThree";
+import AboutCompTwo from "@/components/aboutuscomp/aboutcomptwo/AboutCompTwo";
+import ContactComp from "@/components/contactcomp/ContactComp";
+
 export default function AboutPage() {
     return (
       <div>
-        <h1>About Us</h1>
-        <p>Welcome to the About page. Here you'll find information about our company and team.</p>
+        <AboutCompOne/>
+        <AboutCompTwo/>
+        <AboutCompThree/>
+        <ContactComp/>
       </div>
     );
   }
